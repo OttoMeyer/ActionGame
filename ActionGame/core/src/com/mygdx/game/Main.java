@@ -1,5 +1,7 @@
 package com.mygdx.game;
 
+import com.mygdx.game.entity.*;
+
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
@@ -9,12 +11,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
-import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 
-import java.awt.*;
-import java.security.Key;
 import java.util.ArrayList;
 
 public class Main extends ApplicationAdapter {
@@ -28,10 +27,16 @@ public class Main extends ApplicationAdapter {
 	Music music;
 	OrthographicCamera camera;
 	Vector3 locationMouse;
-	ArrayList<Entity> entitys;
+	ArrayList<Еnemy> entitys;
+	ArrayList<Totem> totems;
+	SimpleEntity simpleEntity;
+	//LiveEntity liveEntity;
+	LiveEntity liveEntity;
 	
 	@Override
 	public void create () {
+		simpleEntity = new SimpleEntity(new Vector2(100, 100));
+		liveEntity = new LiveEntity(new Vector2(200, 200), new Vector2(0, 0), 100);
 		player = new Player(100,100,100);
 		mouse = new Mouse();
 		bullets = new ArrayList<>();
@@ -45,7 +50,9 @@ public class Main extends ApplicationAdapter {
 		camera = new OrthographicCamera(Gdx.graphics.getWidth()/4, Gdx.graphics.getHeight()/4);
 		player.weapon.chengeWeapon("Sword");
 		entitys = new ArrayList<>();
-		entitys.add(new Entity(new Vector2(Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2)));
+		entitys.add(new Еnemy(new Vector2(Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2)));
+		totems = new ArrayList<>();
+		totems.add(new Totem(new Vector2(Gdx.graphics.getWidth()/2,Gdx.graphics.getHeight()/2), 100));
 	}
 
 	@Override
@@ -59,7 +66,7 @@ public class Main extends ApplicationAdapter {
 		terrane.draw(batch);
 		batch.end();
 		shape.begin(ShapeRenderer.ShapeType.Line);
-		player.update();
+		player.update(terrane.hitBoxes);
 		mouse.draw(shape);
 
 		if(Gdx.input.isButtonJustPressed(Input.Buttons.LEFT))
@@ -71,7 +78,7 @@ public class Main extends ApplicationAdapter {
 		shape.end();
 		batch.begin();
 		if(Gdx.input.isButtonJustPressed(Input.Buttons.LEFT))
-			for(Entity entity: entitys){
+			for(Еnemy entity: entitys){
 				player.makeHit(entity, locationMouse, batch);
 			}
 
@@ -85,19 +92,27 @@ public class Main extends ApplicationAdapter {
 		//entity.setTarget(new Vector2(player.location));
 
 		for (int i = 0; i < entitys.size(); i++) { // Уничтожение блоков
-			Entity e = entitys.get(i);
+			Еnemy e = entitys.get(i);
 			if (e.HP <= 0) {
 				entitys.remove(e);
 				i--;
 			}
 			else{
+				//player.test(e);
 				e.setTarget(new Vector2(player.location));
 				e.update();
 				e.draw(batch);
 			}
 		}
 
+		for(Totem t: totems){
+			t.update(entitys);
+			t.draw(batch);
+		}
 
+		simpleEntity.draw(batch);
+		liveEntity.update();
+		liveEntity.draw(batch);
 
 		batch.end();
 

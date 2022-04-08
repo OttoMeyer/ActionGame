@@ -11,6 +11,8 @@ public class Weapon {
     float angle;
     Sprite spriteWeapon;
     Sprite spriteHit;
+    Skill skillOne;
+    Skill skillTwo;
     public Weapon(){
         idName = "Null";
         spriteWeapon = new Sprite();
@@ -26,6 +28,7 @@ public class Weapon {
             case "Sword":
                 spriteWeapon = new Sprite(new Texture("Sword.png"));
                 spriteHit = new Sprite(new Texture("Hit.png"));
+                skillOne = new Skill("Slash");
                 break;
             case "Hummer":
                 spriteWeapon = new Sprite(new Texture("Hummer.png"));
