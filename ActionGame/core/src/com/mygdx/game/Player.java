@@ -16,11 +16,12 @@ public class Player extends LiveEntity {
     float acceleration;
     float maxSpeed;
     Weapon weapon;
+    final float DIG = 100;
     public Player(float x, float y, float speed){
         super(new Vector2(x,y), new Vector2(0,0), 100, "Player2.png");
-        this.speed = new Vector2(speed,0);
-        this.acceleration = 40;
-        this.maxSpeed = 400;
+        this.speed = new Vector2(0,0);
+        this.acceleration = 40/DIG;
+        this.maxSpeed = 400/DIG;
         weapon = new Weapon();
     }
     public void update(){

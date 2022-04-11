@@ -44,9 +44,8 @@ public class LiveEntity extends SimpleEntity {
     }
 
     public void update(){
-        Vector2 norSpeed = new Vector2(speed).nor();
-        location.x += norSpeed.x * 100 * Gdx.graphics.getDeltaTime();
-        location.y += norSpeed.y * 100 * Gdx.graphics.getDeltaTime();
+        location.x += speed.x * 100 * Gdx.graphics.getDeltaTime();
+        location.y += speed.y * 100 * Gdx.graphics.getDeltaTime();
         hitBox.setPosition(location);
     }
 
