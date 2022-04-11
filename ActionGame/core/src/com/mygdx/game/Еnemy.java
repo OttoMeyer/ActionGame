@@ -10,7 +10,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.entity.LiveEntity;
 
 public class Еnemy extends LiveEntity {
-    private static final int FRAME_COLS = 2, FRAME_ROWS = 1;
+    private static int FRAME_COLS = 2, FRAME_ROWS = 1;
     Vector2 target;
     float acceleration;
     float maxSpeed;
@@ -18,6 +18,7 @@ public class Еnemy extends LiveEntity {
     Animation<TextureRegion> walkAnimation;
     Texture walkSheet;
     float stateTime;
+
     public Еnemy(Vector2 location){
         super(location, new Vector2(0,0), 100);
         this.target = new Vector2(0,0);
@@ -28,14 +29,20 @@ public class Еnemy extends LiveEntity {
         сustomizeAnimation();
     }
     public void setTarget(Vector2 target){
-        this.target = new Vector2(target.x-location.x,target.y-location.y);
-        this.target.nor();
+        this.target = new Vector2(target.x,target.y);
     }
     public void update(){
-        location.x += speed.x * target.x * 10 * Gdx.graphics.getDeltaTime();
-        location.y += speed.y * target.y * 10 * Gdx.graphics.getDeltaTime();
+        speed = new Vector2(goTo(target));
+        super.update();
         hitBox.setPosition(location);
     }
+
+    private Vector2 goTo(Vector2 target){
+        Vector2 speed = new Vector2(target.x-location.x, target.y-location.y);
+        speed.nor();
+        return speed;
+    }
+
     public void draw(SpriteBatch batch){
         stateTime += Gdx.graphics.getDeltaTime();
         TextureRegion currentFrame = walkAnimation.getKeyFrame(stateTime, true);

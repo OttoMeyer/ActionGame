@@ -7,25 +7,20 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
+import com.mygdx.game.entity.LiveEntity;
 
 
 import java.util.ArrayList;
 
-public class Player {
-    HitBox hitBox;
-    Vector2 location;
-    Vector2 speed;
+public class Player extends LiveEntity {
     float acceleration;
     float maxSpeed;
-    Sprite spritePlayer;
     Weapon weapon;
     public Player(float x, float y, float speed){
-        this.location = new Vector2(x,y);
-        hitBox = new HitBox(16,16, location);
+        super(new Vector2(x,y), new Vector2(0,0), 100, "Player2.png");
         this.speed = new Vector2(speed,0);
         this.acceleration = 40;
         this.maxSpeed = 400;
-        spritePlayer = new Sprite(new Texture("Player2.png"));
         weapon = new Weapon();
     }
     public void update(){
@@ -48,8 +43,9 @@ public class Player {
         if(isCrossAll(hitBoxes)){
             speed.setZero();
         }
-        location.x += speed.x * Gdx.graphics.getDeltaTime();
-        location.y += speed.y * Gdx.graphics.getDeltaTime();
+        super.update();
+        //location.x += speed.x * Gdx.graphics.getDeltaTime();
+        //location.y += speed.y * Gdx.graphics.getDeltaTime();
         speed.x += -speed.x * 0.1f;
         speed.y += -speed.y * 0.1f;
         hitBox.setPosition(location);
@@ -66,15 +62,9 @@ public class Player {
         return false;
     }
 
-    public void draw(SpriteBatch batch){
-        spritePlayer.setPosition(location.x,location.y);
-        spritePlayer.draw(batch);
-    }
+
     public void makeHit(Еnemy entity, Vector3 mouse, SpriteBatch batch){
         weapon.skillOne.useSkill(entity, mouse, batch);
     }
 
-    public void test(Еnemy entity){
-        System.out.println(hitBox.isCross(entity.hitBox));
-    }
 }

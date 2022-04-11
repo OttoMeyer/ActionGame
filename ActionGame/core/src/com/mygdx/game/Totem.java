@@ -11,8 +11,8 @@ import java.util.ArrayList;
 public class Totem extends LiveEntity {
     float stateTime;
     public Totem(Vector2 location, int HP){
-        super(location, new Vector2(0,0), HP);
-        sprite = new Sprite(new Texture("Totem.png"));
+        super(location, new Vector2(0,0), HP, "Totem.png");
+        //sprite = new Sprite(new Texture("Totem.png"));
     }
 
     public void update(ArrayList<Еnemy> entities){
