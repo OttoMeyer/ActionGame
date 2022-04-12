@@ -1,8 +1,6 @@
 package com.mygdx.game;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.entity.LiveEntity;
 
@@ -15,12 +13,12 @@ public class Totem extends LiveEntity {
         //sprite = new Sprite(new Texture("Totem.png"));
     }
 
-    public void update(ArrayList<Еnemy> entities){
+    public void update(ArrayList<Enemy> entities){
         stateTime += Gdx.graphics.getDeltaTime();
         if(stateTime > 10){
             stateTime = 0;
             System.out.println(stateTime);
-            entities.add(new Еnemy(location));
+            entities.add(new Enemy(location));
         }
     }
 }
