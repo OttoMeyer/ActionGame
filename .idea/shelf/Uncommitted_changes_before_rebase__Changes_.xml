@@ -1,0 +1,89 @@
+<changelist name="Uncommitted_changes_before_rebase_[Changes]" date="1649699528273" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Skill.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Skill.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Skill.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Main.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Main.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Main.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Еnemy.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Еnemy.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Еnemy.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/entity/LiveEntity.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/entity/LiveEntity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/LiveEntity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/HitBox.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/HitBox.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/HitBox.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/desktop/build/classes/java/main/com/mygdx/game/DesktopLauncher.class" />
+    <option name="AFTER_PATH" value="ActionGame/desktop/build/classes/java/main/com/mygdx/game/DesktopLauncher.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/DesktopLauncher.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Terrane.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Terrane.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Terrane.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Entity.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Entity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Entity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/entity/SimpleEntity.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/entity/SimpleEntity.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/SimpleEntity.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/libs/core-1.0.jar" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/libs/core-1.0.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/core-1.0.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Weapon.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Weapon.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Weapon.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Player.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Player.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Player.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Totem.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Totem.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Totem.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Bullet.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Bullet.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Bullet.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/desktop/build/tmp/compileJava/previous-compilation-data.bin" />
+    <option name="AFTER_PATH" value="ActionGame/desktop/build/tmp/compileJava/previous-compilation-data.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/previous-compilation-data.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Mouse.class" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/classes/java/main/com/mygdx/game/Mouse.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/Mouse.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="ActionGame/core/build/tmp/compileJava/previous-compilation-data.bin" />
+    <option name="AFTER_PATH" value="ActionGame/core/build/tmp/compileJava/previous-compilation-data.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/previous-compilation-data1.bin" />
+  </binary>
+</changelist>
