@@ -1,5 +1,6 @@
 package com.mygdx.game;
 
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 
 public class HitBox {
@@ -55,6 +56,10 @@ public class HitBox {
             return true;
         }
         else return false;
+    }
+
+    public void showHimself(ShapeRenderer shapeRenderer){
+        shapeRenderer.rect(location.x, location.y, width, height);
     }
 
 }

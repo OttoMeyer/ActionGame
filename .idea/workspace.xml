@@ -4,7 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8caca4d-828f-4618-8ae9-a0dc3bd9190d" name="Changes" comment="Исправил баг с движением Player" />
+    <list default="true" id="f8caca4d-828f-4618-8ae9-a0dc3bd9190d" name="Changes" comment="Что-то">
+      <change afterPath="$PROJECT_DIR$/ActionGame/assets/Heart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ActionGame/assets/Portal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Portal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/7.3.3/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Bullet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Enemy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Entity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/HitBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/HitBox.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Totem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/Weapon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/entity/LiveEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/entity/LiveEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/entity/SimpleEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/entity/SimpleEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/interfacesPackage/Skill.class" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/interfacesPackage/Skill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/skillsPackage/Slash.class" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/classes/java/main/com/mygdx/game/skillsPackage/Slash.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/libs/core-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/libs/core-1.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Enemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Enemy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Entity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/HitBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/HitBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Totem.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Totem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/entity/LiveEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/entity/LiveEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/entity/SimpleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/entity/SimpleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/interfacesPackage/Skill.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/interfacesPackage/Skill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/skillsPackage/Slash.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/skillsPackage/Slash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActionGame/desktop/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/ActionGame/desktop/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +79,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -56,15 +104,13 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Еnemy.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Weapon.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Weapon.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/entity/SimpleEntity.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/entity/LiveEntity.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Player.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Player.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Mouse.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Totem.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/gameObg/Totem.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Terrane.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ActionGame/core/src/com/mygdx/game/Skill.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -78,6 +124,13 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ActionGame/assets" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zGMGT\Desktop\ActionGame\ActionGame\assets" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ActionGame:desktop [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -130,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649700806930</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Что-то">
+      <created>1649778547255</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649778547255</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,7 +204,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -165,6 +225,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Изменения" />
     <MESSAGE value="Исправил баг с движением Player" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил баг с движением Player" />
+    <MESSAGE value="Что-то" />
+    <option name="LAST_COMMIT_MESSAGE" value="Что-то" />
   </component>
 </project>

@@ -6,13 +6,13 @@ import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 import com.mygdx.game.HitBox;
 
 public class LiveEntity extends SimpleEntity {
 
     private int FRAME_COLS, FRAME_ROWS;
-    public HitBox hitBox;
     public int HP;
     public Vector2 speed;
     TextureRegion[] animationFrames;
@@ -22,24 +22,19 @@ public class LiveEntity extends SimpleEntity {
 
     public LiveEntity(Vector2 location, Vector2 speed, int HP) {
         super(location);
-        String nameSprite = "Nothing.png";
         FRAME_COLS = 1;
         FRAME_ROWS = 1;
         this.speed = new Vector2(speed);
         this.HP = HP;
-        hitBox = new HitBox(16, 16, this.location);
-        sprite = new Sprite(new Texture(nameSprite));
-        сustomizeAnimation(nameSprite);
+        сustomizeAnimation("Nothing.png");
     }
 
     public LiveEntity(Vector2 location, Vector2 speed, int HP, String nameSprite) {
-        super(location);
+        super(location, nameSprite);
         FRAME_COLS = 1;
         FRAME_ROWS = 1;
         this.speed = new Vector2(speed);
         this.HP = HP;
-        hitBox = new HitBox(16, 16, this.location);
-        sprite = new Sprite(new Texture(nameSprite));
         сustomizeAnimation(nameSprite);
     }
 
@@ -54,6 +49,14 @@ public class LiveEntity extends SimpleEntity {
         TextureRegion currentFrame = walkAnimation.getKeyFrame(stateTime, true);
         batch.draw(currentFrame, location.x, location.y);
     }
+
+    public void draw(SpriteBatch batch, ShapeRenderer shapeRenderer){
+        stateTime += Gdx.graphics.getDeltaTime();
+        TextureRegion currentFrame = walkAnimation.getKeyFrame(stateTime, true);
+        batch.draw(currentFrame, location.x, location.y);
+        hitBox.showHimself(shapeRenderer);
+    }
+
 
     private void сustomizeAnimation(String nameSprite){
         walkSheet = new Texture(Gdx.files.internal(nameSprite));
