@@ -27,16 +27,12 @@ public class Main extends ApplicationAdapter {
 	Music music;
 	OrthographicCamera camera;
 	Vector3 locationMouse;
-	ArrayList<Еnemy> entitys;
+	ArrayList<Enemy> entitys;
 	ArrayList<Totem> totems;
-	SimpleEntity simpleEntity;
-	//LiveEntity liveEntity;
-	LiveEntity liveEntity;
+	ArrayList<LiveEntity> liveEntities;
 	
 	@Override
 	public void create () {
-		simpleEntity = new SimpleEntity(new Vector2(100, 100));
-		liveEntity = new LiveEntity(new Vector2(200, 200), new Vector2(0, 0), 100);
 		player = new Player(100,100,100);
 		mouse = new Mouse();
 		bullets = new ArrayList<>();
@@ -50,9 +46,10 @@ public class Main extends ApplicationAdapter {
 		camera = new OrthographicCamera(Gdx.graphics.getWidth()/4, Gdx.graphics.getHeight()/4);
 		player.weapon.chengeWeapon("Sword");
 		entitys = new ArrayList<>();
-		entitys.add(new Еnemy(new Vector2(Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2)));
+		entitys.add(new Enemy(new Vector2(Gdx.graphics.getWidth()/2, Gdx.graphics.getHeight()/2)));
 		totems = new ArrayList<>();
 		totems.add(new Totem(new Vector2(Gdx.graphics.getWidth()/2,Gdx.graphics.getHeight()/2), 100));
+		liveEntities = new ArrayList<>();
 	}
 
 	@Override
@@ -77,8 +74,11 @@ public class Main extends ApplicationAdapter {
 
 		shape.end();
 		batch.begin();
+		liveEntities.clear();
+		liveEntities.addAll(entitys);
+		liveEntities.addAll(totems);
 		if(Gdx.input.isButtonJustPressed(Input.Buttons.LEFT))
-			for(Еnemy entity: entitys){
+			for(LiveEntity entity: liveEntities){
 				player.makeHit(entity, locationMouse, batch);
 			}
 
@@ -91,16 +91,27 @@ public class Main extends ApplicationAdapter {
 		player.draw(batch);
 		//entity.setTarget(new Vector2(player.location));
 
-		for (int i = 0; i < entitys.size(); i++) { // Уничтожение блоков
-			Еnemy e = entitys.get(i);
+		for(Enemy e:entitys){
+			e.setTarget(player.location);
+		}
+
+		for (int i = 0; i < liveEntities.size(); i++) { // Уничтожение блоков
+			LiveEntity e = liveEntities.get(i);
 			if (e.HP <= 0) {
-				entitys.remove(e);
+				if(e.getClass() == Enemy.class){
+					entitys.remove(e);
+				}
+				else if(e.getClass() == Totem.class){
+					totems.remove(e);
+				}
+				liveEntities.remove(e);
 				i--;
 			}
 			else{
-				//player.test(e);
-				e.setTarget(new Vector2(player.location));
-				e.update();
+				if (e.getClass() == Enemy.class) {
+					e.update();
+				}
+
 				e.draw(batch);
 			}
 		}
@@ -109,10 +120,6 @@ public class Main extends ApplicationAdapter {
 			t.update(entitys);
 			t.draw(batch);
 		}
-
-		simpleEntity.draw(batch);
-		liveEntity.update();
-		liveEntity.draw(batch);
 
 		batch.end();
 

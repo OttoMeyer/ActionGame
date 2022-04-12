@@ -8,6 +8,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.math.Vector3;
 import com.mygdx.game.entity.LiveEntity;
+import com.mygdx.game.interfacesPackage.Skill;
+import com.mygdx.game.skillsPackage.Slash;
 
 
 import java.util.ArrayList;
@@ -17,12 +19,14 @@ public class Player extends LiveEntity {
     float maxSpeed;
     Weapon weapon;
     final float DIG = 100;
+    Skill skill;
     public Player(float x, float y, float speed){
         super(new Vector2(x,y), new Vector2(0,0), 100, "Player2.png");
         this.speed = new Vector2(0,0);
         this.acceleration = 40/DIG;
         this.maxSpeed = 400/DIG;
         weapon = new Weapon();
+        skill = new Slash();
     }
     public void update(){
         if(Gdx.input.isKeyPressed(Input.Keys.LEFT) || Gdx.input.isKeyPressed(Input.Keys.A)) speed.add(-acceleration,0);;
@@ -64,8 +68,9 @@ public class Player extends LiveEntity {
     }
 
 
-    public void makeHit(Еnemy entity, Vector3 mouse, SpriteBatch batch){
-        weapon.skillOne.useSkill(entity, mouse, batch);
+    public void makeHit(LiveEntity entity, Vector3 mouse, SpriteBatch batch){
+        skill.use(entity, location);
+        //weapon.skillOne.useSkill(entity, mouse, batch);
     }
 
 }
